@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:#03232b;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  margin:0;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  position:relative; 
+  left:850px; 
+  bottom:-200px;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+   margin-left: 2%;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+} 
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 300px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color:white;
+}
+
+
+           
+</style>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000);    
+}
+</script>
+</head>
+<body>
+
+<ul>
+<li><img src="./images/./logow.PNG "  style="float:left; height:40px;"></li>
+  <li><a  href="./entersite.html">Home</a></li>
+  <li><a href="./about.html">About Me</a></li>
+  <li><a href="./portfolio.html">Portfolio</a></li>
+  <li><a href="./contact.html">Contact</a></li>
+</ul>
+<br><br><br><br><br>
+<div class="gallery">
+  <a target="_blank" href="./nature.html">
+    <img src="./images/./p31.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">NATURE</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./animals.html">
+    <img src="./images/./p28.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">ANIMALS</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./flowers.html">
+    <img src="./images/./p30.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">FLOWERS</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./bnw.html">
+    <img src="./images/./p29.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">BLACK & WHITE</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./portrait.html">
+    <img src="./images/./p27.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">PORTRAITS</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./street.html">
+    <img src="./images/./p33.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">STREETS</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./night.html">
+    <img src="./images/./p32.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">NIGHTS</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./shadow.html">
+    <img src="./images/./p26.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">SHADOWS</div>
+  </div>
+
+
+</body>
+</html>

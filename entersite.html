@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<html>
+<head>
+<style>
+body {
+  margin:0;
+  background-color: darkgrey;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+   margin-left: 2%;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+
+
+
+.footer {
+  background-color: black;
+  padding: 6px;
+
+}
+
+</style>
+</head>
+<title>W3.CSS</title>
+
+<body>
+
+<div class="w3-content w3-section" style=" background-size : cover ; margin:auto; width: 100%;
+  height: auto; vertical-align: baseline;">
+
+  <img class="mySlides w3-animate-fading  " src="./images/./p2.jpeg" >
+  <img class="mySlides w3-animate-fading " src="./images/./p3.jpeg">
+  <img class="mySlides w3-animate-fading " src="./images/./p9.jpeg" style="max-width: 100%;
+  height: auto;" >
+  <img class="mySlides w3-animate-fading " src="./images/./p19.jpeg" style="max-width: 100%;
+  height: auto;">
+   <img class="mySlides w3-animate-fading " src="./images/./p14.jpeg" style="max-width: 100%;
+  height: auto;">
+    <img class="mySlides w3-animate-fading " src="./images/./p15.jpeg" style="max-width: 100%;
+  height: auto;">
+	 <img class="mySlides w3-animate-fading " src="./images/./p10.jpeg" style="max-width: 100%;
+  height: auto;">
+	  <img class="mySlides w3-animate-fading " src="./images/./p18.jpeg" style="max-width: 100%;
+  height: auto;">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000);    
+}
+</script>
+
+<ul>
+<li><img src="./images/./logow.PNG "  style="float:left; height:40px;"></li>
+  <li><a  href="./entersite.html">Home</a></li>
+  <li><a href="./about.html">About Me</a></li>
+  <li><a href="./portfolio.html">Portfolio</a></li>
+  <li><a href="./contact.html">Contact</a></li>
+</ul>
+
+<div style="background-color:#03232b;">
+<div style=" color:grey; text-decoration: underline; font-family: 'Bellefair';font-size: 40px; text-align:center;">RECENT</div>
+<a href="https://www.instagram.com/p/CKTl0ESJEcB/?igshid=16qmf5dp5v9tm">
+         <h2 style="color:white; font-family: 'Bellefair'; margin:50px;">LATEST INSTAGRAM POST</h2><img src="./images/./cat.jpeg"
+         style="margin:50px; height:500px; border:5px solid white;">
+      </a>
+</div>
+<div style="background-color:white;">
+<div style=" color:black; text-decoration: underline; font-family: 'Bellefair';font-size: 22px; text-align:center;">BRAND COLLABORATIONS</div><br>
+ <img src="./images/./Canon_logo_black.png" style=" margin-left: 500px;   height:20px;">
+  <img src="./images/./5847e949cef1014c0b5e4820.png" style="  margin:20px; height:40px;">
+   <img src="./images/./58482500cef1014c0b5e49cf.png" style="height:40px;">
+   <br>
+    <img src="./images/./oppo-logo.png" style=" margin-left: 500px; height:70px;">
+	 <img src="./images/./jbl-2-logo-black-and-white.png" style=" margin:25px; height:50px;">
+	  <img src="./images/./1280px-Disney+_Hotstar_logo.svg.png" style=" height:50px;">
+</div>
+
+<div class="footer">
+  <div style=" color:grey;  font-family: 'Bellefair';font-size: 22px; ">FREELANCE PHOTOGRAPHER <img src="./images/./ilogo.jpg" style="margin-left: 250px;   height:40px;">
+   <img src="./images/./flogos.png" style="   height:28px;">
+  <img src="./images/./plogo.png" style="  margin-left:15px; height:24px;">
+  <div style=" color:grey;  font-family: 'Bellefair';font-size: 22px;float:right;">PUNJAB,INDIA</div></div>
+</div>
+
+</body>
+</html>
